@@ -20,6 +20,13 @@ namespace HMAngular.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<DataCenter> DataCenters { get; set; }
+        public DbSet<World> Worlds { get; set; }
+        public DbSet<Character> Characters { get; set; }
+        public DbSet<CharacterClass> CharacterClasses { get; set; }
+        public DbSet<Class> Classes { get; set; }
+        public DbSet<Job> Jobs { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

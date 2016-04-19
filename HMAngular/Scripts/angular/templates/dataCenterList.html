@@ -1,0 +1,8 @@
+﻿<h3 class="breadcrumb"><a class="glyphicon glyphicon-chevron-left" href="#/"></a> Data Centers</h3>
+<treasure-overlay-spinner active='spinner.active'>
+    <div class="list-group">
+        <a class="list-group-item" href="#/DataCenters/{{dc.DataCenterID}}" ng-repeat="dc in model.DataCenters">
+            <div>{{::dc.Name}}<span ng-show="dc.Region != null"> ({{::dc.Region}})</span></div>
+        </a>
+    </div>
+</treasure-overlay-spinner>
